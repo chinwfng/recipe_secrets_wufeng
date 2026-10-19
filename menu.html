@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menu | Recipe Secrets</title>
+<meta name="description" content="Browse the Recipe Secrets menu: Chef's Specials, Starters, Mains, Desserts and Drinks, made from three generations of family recipes.">
+<meta property="og:title" content="Menu | Recipe Secrets">
+<meta property="og:description" content="Browse the Recipe Secrets menu: Chef's Specials, Starters, Mains, Desserts and Drinks.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/chefs-special.jpg">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary">
+    <a href="index.html" class="logo">Recipe <span>Secrets</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html" aria-current="page">Menu</a></li>
+      <li><a href="reservation.html">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image: url('images/menu-main-1.jpg');">
+    <div class="container">
+      <h1>Our Menu</h1>
+      <p>Family recipes, reimagined daily. 🌱 Vegetarian &nbsp; 🌾 Gluten-Free &nbsp; 🌶 Spicy</p>
+    </div>
+  </section>
+
+  <section id="specials">
+    <div class="container">
+
+      <!-- Chef's Specials -->
+      <div class="specials-banner fade-in">
+        <div>
+          <span class="eyebrow">Chef's Specials</span>
+          <h2>Today's Signature Plate</h2>
+          <p><strong>Seared Duck Breast with Fig &amp; Rosemary Jus</strong> — pan-seared duck breast, roasted fig, charred rosemary, and a reduction built from Rosa's original braising stock.</p>
+          <p class="price" style="font-size:1.3rem; color:var(--color-gold-light);">$32</p>
+        </div>
+        <img src="images/chefs-special.jpg" alt="Chef's special: seared duck breast with fig and rosemary jus" loading="lazy" width="500" height="260">
+      </div>
+
+      <!-- Category filter tabs -->
+      <div class="menu-tabs fade-in" role="tablist" aria-label="Menu categories">
+        <button class="menu-tab" role="tab" aria-selected="true" data-target="all">All</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="starters">Starters</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="mains">Mains</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="desserts">Desserts</button>
+        <button class="menu-tab" role="tab" aria-selected="false" data-target="drinks">Drinks</button>
+      </div>
+
+      <!-- Starters -->
+      <div class="menu-category fade-in" id="starters">
+        <h3>Starters</h3>
+
+        <div class="menu-item">
+          <img src="images/menu-starter-1.jpg" alt="Heirloom tomato and burrata salad" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Heirloom Tomato &amp; Burrata</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+              <span class="diet-icon diet-gf" title="Gluten-Free" aria-label="Gluten-Free">GF</span>
+            </div>
+            <p class="desc">Heirloom tomatoes, creamy burrata, basil oil, aged balsamic.</p>
+          </div>
+          <span class="price">$12</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-starter-2.jpg" alt="Crispy calamari with spicy aioli" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Crispy Calamari</h4>
+              <span class="diet-icon diet-spicy" title="Spicy" aria-label="Spicy">🌶</span>
+            </div>
+            <p class="desc">Lightly fried calamari, lemon, spicy aioli.</p>
+          </div>
+          <span class="price">$14</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/featured-dish-2.jpg" alt="Grandma Rosa's roasted garlic bread" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Rosa's Garlic Bread</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+            </div>
+            <p class="desc">Wood-fired sourdough, roasted garlic butter, herbs.</p>
+          </div>
+          <span class="price">$8</span>
+        </div>
+      </div>
+
+      <!-- Mains -->
+      <div class="menu-category fade-in" id="mains">
+        <h3>Mains</h3>
+
+        <div class="menu-item">
+          <img src="images/menu-main-1.jpg" alt="The Secret Burger with smoked cheddar" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name"><h4>The Secret Burger</h4></div>
+            <p class="desc">Spice-blend beef patty, smoked cheddar, house sauce, brioche bun.</p>
+          </div>
+          <span class="price">$19</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/featured-dish-1.jpg" alt="Grandma Rosa's slow-braised short rib" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Grandma Rosa's Short Rib</h4>
+              <span class="diet-icon diet-gf" title="Gluten-Free" aria-label="Gluten-Free">GF</span>
+            </div>
+            <p class="desc">Red-wine braised six hours, roasted root vegetables, rosemary jus.</p>
+          </div>
+          <span class="price">$28</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-main-2.jpg" alt="Wood-fired margherita pizza" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Wood-Fired Margherita</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+            </div>
+            <p class="desc">San Marzano tomato, fresh mozzarella, basil.</p>
+          </div>
+          <span class="price">$17</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-main-3.jpg" alt="Herb-roasted salmon with lemon butter" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Herb-Roasted Salmon</h4>
+              <span class="diet-icon diet-gf" title="Gluten-Free" aria-label="Gluten-Free">GF</span>
+            </div>
+            <p class="desc">Lemon butter sauce, seasonal vegetables.</p>
+          </div>
+          <span class="price">$26</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-main-4.jpg" alt="Spicy arrabbiata pasta" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Arrabbiata Pasta</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+              <span class="diet-icon diet-spicy" title="Spicy" aria-label="Spicy">🌶</span>
+            </div>
+            <p class="desc">Hand-rolled pasta, San Marzano tomato, chili, garlic.</p>
+          </div>
+          <span class="price">$18</span>
+        </div>
+      </div>
+
+      <!-- Desserts -->
+      <div class="menu-category fade-in" id="desserts">
+        <h3>Desserts</h3>
+
+        <div class="menu-item">
+          <img src="images/featured-dish-3.jpg" alt="Nonna's chocolate layer cake" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Nonna's Chocolate Cake</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+            </div>
+            <p class="desc">Three-generation family recipe, rich dark chocolate.</p>
+          </div>
+          <span class="price">$11</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-dessert-1.jpg" alt="Warm cinnamon pancake stack with syrup" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Cinnamon Pancake Stack</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+            </div>
+            <p class="desc">Buttermilk pancakes, cinnamon syrup, whipped cream.</p>
+          </div>
+          <span class="price">$10</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-dessert-2.jpg" alt="Classic tiramisu dusted with cocoa" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Classic Tiramisu</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+            </div>
+            <p class="desc">Espresso-soaked ladyfingers, mascarpone, cocoa.</p>
+          </div>
+          <span class="price">$9</span>
+        </div>
+      </div>
+
+      <!-- Drinks -->
+      <div class="menu-category fade-in" id="drinks">
+        <h3>Drinks</h3>
+
+        <div class="menu-item">
+          <img src="images/menu-drink-1.jpg" alt="Signature old fashioned cocktail" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name"><h4>Secret Old Fashioned</h4></div>
+            <p class="desc">Bourbon, bitters, orange peel, house syrup.</p>
+          </div>
+          <span class="price">$13</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/menu-drink-2.jpg" alt="Glass of house red wine" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>House Red Wine</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+              <span class="diet-icon diet-gf" title="Gluten-Free" aria-label="Gluten-Free">GF</span>
+            </div>
+            <p class="desc">A medium-bodied blend selected by our sommelier.</p>
+          </div>
+          <span class="price">$9</span>
+        </div>
+
+        <div class="menu-item">
+          <img src="images/about-interior.jpg" alt="Fresh-squeezed lemonade" loading="lazy" width="110" height="90">
+          <div>
+            <div class="menu-item-name">
+              <h4>Fresh-Squeezed Lemonade</h4>
+              <span class="diet-icon diet-v" title="Vegetarian" aria-label="Vegetarian">V</span>
+              <span class="diet-icon diet-gf" title="Gluten-Free" aria-label="Gluten-Free">GF</span>
+            </div>
+            <p class="desc">Made fresh daily, lightly sweetened.</p>
+          </div>
+          <span class="price">$5</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">Recipe <span style="color:var(--color-gold);">Secrets</span></a>
+        <p>Family recipes, warmly served since 1962.</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon&ndash;Thu: 11am&ndash;9pm<br>Fri&ndash;Sat: 11am&ndash;10:30pm<br>Sun: 10am&ndash;8pm</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>123 Market Street<br>Springfield, ST 12345<br>(555) 123-4567</p>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Recipe Secrets. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

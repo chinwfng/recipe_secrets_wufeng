@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservations | Recipe Secrets</title>
+<meta name="description" content="Reserve your table at Recipe Secrets. Book online for parties of any size.">
+<meta property="og:title" content="Reservations | Recipe Secrets">
+<meta property="og:description" content="Reserve your table at Recipe Secrets. Book online for parties of any size.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/about-interior.jpg">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="navbar container" aria-label="Primary">
+    <a href="index.html" class="logo">Recipe <span>Secrets</span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="reservation.html" aria-current="page">Reservation</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero" style="background-image: url('images/about-interior.jpg');">
+    <div class="container">
+      <h1>Reserve a Table</h1>
+      <p>We'd love to host you. Fill out the form below and we'll confirm your reservation shortly.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="form-wrap fade-in">
+
+        <div class="form-note">
+          <strong>Note:</strong> This form submits via
+          <a href="https://formspree.io" target="_blank" rel="noopener noreferrer" style="color:var(--color-burgundy); text-decoration:underline;">Formspree</a>.
+          Replace <code>YOUR_FORM_ID</code> in the form's <code>action</code> attribute with your real Formspree endpoint before going live — see README.md for setup steps.
+        </div>
+
+        <!-- FORMSPREE PLACEHOLDER: replace YOUR_FORM_ID with your real endpoint, e.g. https://formspree.io/f/abcdwxyz -->
+        <form id="reservation-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="res-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="res-name" name="name" required autocomplete="name">
+              <p class="error-msg">Please enter your name.</p>
+            </div>
+            <div class="field">
+              <label for="res-email">Email <span class="required">*</span></label>
+              <input type="email" id="res-email" name="email" required autocomplete="email">
+              <p class="error-msg">Please enter a valid email address.</p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="res-phone">Phone <span class="required">*</span></label>
+              <input type="tel" id="res-phone" name="phone" required autocomplete="tel" pattern="[0-9+\-\s()]{7,}">
+              <p class="error-msg">Please enter a valid phone number.</p>
+            </div>
+            <div class="field">
+              <label for="res-guests">Number of Guests <span class="required">*</span></label>
+              <select id="res-guests" name="guests" required>
+                <option value="">Select...</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7+</option>
+              </select>
+              <p class="error-msg">Please select the number of guests.</p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="res-date">Date <span class="required">*</span></label>
+              <input type="date" id="res-date" name="date" required>
+              <p class="error-msg">Please choose a valid date.</p>
+            </div>
+            <div class="field">
+              <label for="res-time">Time <span class="required">*</span></label>
+              <input type="time" id="res-time" name="time" required>
+              <p class="error-msg">Please choose a time.</p>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="res-notes">Special Requests</label>
+            <textarea id="res-notes" name="notes" placeholder="Allergies, special occasions, seating preferences..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%; color:var(--color-charcoal);">Request Reservation</button>
+        </form>
+
+        <div class="confirmation" id="confirmation-message">
+          <h3>Thank You!</h3>
+          <p>Your reservation request has been received. We'll send a confirmation to your email shortly. We can't wait to host you at Recipe Secrets!</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="logo">Recipe <span style="color:var(--color-gold);">Secrets</span></a>
+        <p>Family recipes, warmly served since 1962.</p>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <p>Mon&ndash;Thu: 11am&ndash;9pm<br>Fri&ndash;Sat: 11am&ndash;10:30pm<br>Sun: 10am&ndash;8pm</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>123 Market Street<br>Springfield, ST 12345<br>(555) 123-4567</p>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="reservation.html">Reservation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Recipe Secrets. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
