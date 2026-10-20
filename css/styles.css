@@ -236,9 +236,19 @@ select:focus-visible {
   display: block;
 }
 .hero-content h1 {
-  color: var(--color-white);
+  background: linear-gradient(90deg, #ff0000, #ff9900, #ffee00, #33ff00, #00ccff, #3300ff, #cc00ff, #ff0000);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
   font-size: clamp(2.4rem, 6vw, 4rem);
   margin-bottom: 0.5rem;
+  animation: rainbow-shift 6s linear infinite;
+}
+@keyframes rainbow-shift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
 .hero-content .tagline {
   font-size: 1.2rem;
